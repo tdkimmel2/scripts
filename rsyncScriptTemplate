@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#rsync -urvP kekcc:/home/belle/tkimmel/belle/recon/root/$1 .
+rsync -urvP user@destination:/path/to/directory/$1 .

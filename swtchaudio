@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Get card number of HDA Creative
+# Can be optimized by replacing grep with awk/sed
+cardnum=$(aplay -l | grep 'HDA Creative' | awk 'NR==1{gsub(/:/,""); print $2}') # Use aplay to get cards, grep lines which contain card name (HDA Creative in this case), awk only the first line of that output, remove the colon at the end of the number and print the number
+
+# lnout="LineOut"
+lnout="Speakers"
+hdphn="Headphone"
+
+# Get current configuration, Line Out or Headphones
+
+#crntaudio=$(amixer -c $cardnum get 'Output Select' | sed -n 4p | awk -F: '{gsub(/ /, ""); gsub("\047",""); print $2 }') # Take current configuration of 'Output Select', print the fourth line of that, get rid of spaces and ' characters and print config
+
+# Slight optimization to do with just awk and one pipe
+crntaudio=$(amixer -c $cardnum get 'Output Select' | awk -F: 'NR==4{gsub(/ /, ""); gsub("\047",""); print $2 }') # Take current configuration of 'Output Select', print the fourth line of that, get rid of spaces and ' characters and print current setting
+
+# Switch to the other audio output option
+if [ "$crntaudio" == "$lnout" ]
+then
+    #echo $crntaudio
+    amixer -c $cardnum set 'Output Select' 'Headphone'
+elif [ "$crntaudio" == "$hdphn" ]
+then
+    # amixer -c $cardnum set 'Output Select' 'Line Out'
+    amixer -c $cardnum set 'Output Select' 'Speakers'
+fi

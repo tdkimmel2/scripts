@@ -1,0 +1,18 @@
+Various useful scripts to be added to to $PATH
+
+buildroot is the compilation command for compiling ROOT Data Analysis Software
+
+kbinds brings up various keyboard bindings for:
+    dwm
+    Vimium web browser extension
+
+monitor quickly shows CPU temps and Memory used
+
+rsyncScriptTemplate is a template for using rsync - used to be for KEKCC
+
+startdwm is meant to be symlinked to /bin/startdwm via:
+    ln -s startdwm /bin/startdwm
+    Then add "exec /bin/startdwm" to your .xinitrc rather than just exec dwm
+    This immediatly refreshed dwm on MOD+Shift+Q (quit dwm) without closing all opened windows
+
+swtchaudio switches between headphones and speakers via alsamixer - configure to each machines hardware

@@ -1,0 +1,12 @@
+#!/bin/bash
+echo ""
+echo "CPU Temps"
+echo "==============="
+#sensors | awk '/^Core / {print "Core" $2 ": " $3 $4}'
+sensors | awk '/^Core / {print "Core" $2 ": " $3}'
+echo ""
+echo "Used Memory"
+echo "==============="
+free -h | awk '/^Mem: / {print $3 "/" $2}'
+free -h | awk '/^Mem: / {print "buff/cache: " $6}'
+echo ""

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cmake /home/tkimmel/builds/root/ -Dall=ON -DPYTHON_EXECUTABLE=/usr/bin/python2 && cmake --build . -- -j3
