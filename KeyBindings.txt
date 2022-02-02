@@ -35,6 +35,10 @@ Layout
 [Mod]+[t]               - tiled mode. []=
 [Mod]+[f]               - floating mode. ><>
 [Mod]+[m]               - monocle mode. [M] (single window fullscreen)
+[Mod]+[u]               - centered master
+[Mod]+[o]               - floating master
+[Mod]+[r]               - Fibonacci spiral
+[Mod]+[Shift]+[r]       - Fibonacci dwindle
 
 Floating
 ========
