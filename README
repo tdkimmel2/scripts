@@ -3,7 +3,7 @@ Various useful scripts to be added to to $PATH
 buildroot is the compilation command for compiling ROOT Data Analysis Software
 
 kbinds brings up various keyboard bindings for:
-    dwm
+    my build of dwm (https://github.com/tdkimmel2/dwm)
     Vimium web browser extension
 
 monitor quickly shows CPU temps and Memory used
@@ -16,3 +16,7 @@ startdwm is meant to be symlinked to /bin/startdwm via:
     This immediatly refreshed dwm on MOD+Shift+Q (quit dwm) without closing all opened windows
 
 swtchaudio switches between headphones and speakers via alsamixer - configure to each machines hardware
+
+dis is just a shortcut to change typing "X & disown" to "dis X"
+
+checkBattery is a script to output the current battery status
