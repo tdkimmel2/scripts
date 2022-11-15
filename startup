@@ -1,4 +1,4 @@
 #!/bin/bash
 
-feh --bg-scale Pictures/ArchLinuxDragonWallpaper.jpg &&
-/home/tkimmel/builds/dwm/dwm-bar/dwm_bar.sh > /dev/null & disown
+feh --bg-scale /home/tkimmel/Pictures/ArchLinuxDragonWallpaper.jpg &&
+dwmblocks &> /dev/null & disown
