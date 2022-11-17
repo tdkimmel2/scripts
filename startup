@@ -1,4 +1,0 @@
-#!/bin/bash
-
-feh --bg-scale /home/tkimmel/Pictures/ArchLinuxDragonWallpaper.jpg &&
-dwmblocks &> /dev/null & disown
