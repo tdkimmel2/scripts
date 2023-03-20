@@ -2,3 +2,4 @@
 
 #xrandr --output DP-1 --primary --output DP-5 --right-of DP-1 --output HDMI-0 --right-of DP-5
 xrandr --output DP-1 --mode 2560x1440 --primary --output DP-5 --mode 2560x1440 --right-of DP-1 --output HDMI-0 --mode 1920x1080 --right-of DP-5
+#xrandr --output DP-1 --mode 2560x1440 --primary --output DP-5 --mode 4096x2160 --right-of DP-1 --output HDMI-0 --mode 1920x1080 --right-of DP-5
