@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /home/tkimmel/builds/lycheeslicer/ &&
+./LycheeSlicer-7.1.2.AppImage
