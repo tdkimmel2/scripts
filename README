@@ -2,11 +2,14 @@ Various useful scripts to be added to to $PATH
 
 kbinds brings up various keyboard bindings for:
     my build of dwm (https://github.com/tdkimmel2/dwm)
+    my build of st (https://github.com/tdkimmel2/st)
     Vimium web browser extension
 
-monitor quickly shows CPU temps and Memory used
+zathKbinds shows key bindings for Zathura
 
-rsyncScriptTemplate is a template for using rsync - used to be for KEKCC
+qbinds shows key bindings for qutebrowser
+
+monitor quickly shows CPU temps and Memory used
 
 startdwm is meant to be symlinked to /bin/startdwm via:
     ln -s startdwm /bin/startdwm
@@ -15,6 +18,12 @@ startdwm is meant to be symlinked to /bin/startdwm via:
 
 swtchaudio switches between headphones and speakers via alsamixer - configure to each machines hardware
 
-dis is just a shortcut to change typing "X & disown" to "dis X"
+swpcapsescape swaps the caps lock and the escape keys, needed a lot because my KVM switch resets the swapping
 
-checkBattery is a script to output the current battery status
+checkProton and updateProton checks the current Proton Glorious Eggroll version and lists currently installed ones and installs the newest version respectively
+
+threeMonitors refreshes xrandr output to my monitor setup
+
+lycheeslicer launches local install of Lychee Slicer
+
+pskill kills process of given name
