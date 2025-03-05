@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Get latest proton version
+echo "Fetching tarball URL..."
+tarball_url=$(curl -s https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest | grep browser_download_url | cut -d\" -f4 | grep .tar.gz)
+tarball_name=$(basename $tarball_url)
+echo "Newest Proton-GE version: $tarball_name..."
