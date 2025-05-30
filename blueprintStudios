@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /home/tkimmel/.wine/drive_c/users/tkimmel/Local\ Settings/Application\ Data/Programs/Blueprint\ Studio/ &&
+wine Blueprint\ Studio.exe
